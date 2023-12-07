@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Spring Boot Content Calendar API! This project was developed as part of my journey in learning and exploring the capabilities of Spring Boot.
+This project was developed as part of my journey in learning and exploring the capabilities of Spring Boot.
 
 
 ## Technologies Used
