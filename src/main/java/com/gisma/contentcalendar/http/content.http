@@ -1,0 +1,54 @@
+### Find All Content
+GET http://localhost:8080/api/content
+
+
+
+### Create New Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "A trip to Mordor",
+  "desc": "Wanna go to Mordor",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-11-30T18:01:34.6540022",
+  "dateUpdated": null,
+  "url": ""
+}
+
+
+### Update Existing Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "1st post update!",
+  "desc": "I updated my first post",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-11-30T18:01:34.6540022",
+  "dateUpdated": "2023-11-30T18:01:34.6540022",
+  "url": "http://localhost:8080/my-first-blog-post"
+}
+
+### Update Existing Content with invalid id
+PUT http://localhost:8080/api/content/99
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "1st post update!",
+  "desc": "I updated my first post",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-11-30T18:01:34.6540022",
+  "dateUpdated": "2023-11-30T18:01:34.6540022",
+  "url": "http://localhost:8080/my-first-blog-post"
+}
+
+
+### Delete By id
+DELETE http://localhost:8080/api/content/2
